@@ -30,3 +30,8 @@ h1{
 text-align: center;
 }
 
+input[type="submit"] {
+    margin-top: 15px; 
+}
+
+
