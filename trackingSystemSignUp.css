@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    background-image: url('https://img.pikbest.com/origin/09/17/47/72WpIkbEsTin4.jpg!sw800');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 2em;
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 40em;
+    height: auto;
+    padding: 20px;
+    margin: 0 auto; 
+}
+
+
+.eh{
+text-align: center;
+}
+
