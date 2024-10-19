@@ -1,11 +1,12 @@
 body {
     margin: 0;
-    background-image: url('https://img.pikbest.com/origin/09/17/47/72WpIkbEsTin4.jpg!sw800');
+    height: 100vh; 
+    background-image: url('https://t4.ftcdn.net/jpg/09/16/51/37/360_F_916513756_W5EHubbKhvUbcTw071pUJ1ezdhyLMzIB.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed; 
 }
-
 
 h1{
     text-align: center;
