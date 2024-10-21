@@ -6,7 +6,7 @@ function checkEmail() {
         return false;
     }
 
-    const usedEmail = localStorage.getItem("signedUpEmail"); // Retrieve signed-up email
+    const usedEmail = localStorage.getItem("signedUpEmail"); 
 
     if (email !== usedEmail) {
         alert("Please use the same email that you signed up with");
@@ -29,7 +29,6 @@ function checkPassword() {
     const users = JSON.parse(localStorage.getItem('users')) || {};
     const email = document.getElementById('email').value;
 
-    // Check if the email exists and the password matches
     if (users[email] && users[email].password === password1) {
         alert("Login successful");
         return true;
