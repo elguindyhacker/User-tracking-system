@@ -1,46 +1,40 @@
 function checkEmail() {
- const email = document.getElementById('email').value;
- 
+    const email = document.getElementById('email').value;
 
-
- if (email === '') {
-    alert("Enter your email");
-    return false;
-
-
- }
- const usedEmail = localStorage.getItem("loggedInEmail");
-
-
- if (email !== usedEmail) {
-    alert("Please use the same email that you signed up with")
-    return false; }
-
-
-    if (email === usedEmail) {
-        alert("Thank you for logging in.")
-        return true;
+    if (email === '') {
+        alert("Enter your email");
+        return false;
     }
- }
 
+    const usedEmail = localStorage.getItem("signedUpEmail"); // Retrieve signed-up email
 
-function checkPassword(){
+    if (email !== usedEmail) {
+        alert("Please use the same email that you signed up with");
+        return false;
+    }
+
+    alert("Thank you for logging in.");
+    return true;
+}
+
+function checkPassword() {
     const password1 = document.getElementById('password1').value;
     const password2 = document.getElementById('password2').value;
 
+    if (password1 === '') {
+        alert("Enter your password");
+        return false;
+    }
 
-if (password1 === '') {
-    alert("Enter your password")
-    return false;
-}
+    const users = JSON.parse(localStorage.getItem('users')) || {};
+    const email = document.getElementById('email').value;
 
-if (password1 !== password2) {
-    alert("Password dont match");
-    return false;
-}
-
-if (password1 === password2) {
-    alert("Password matches")
-    return true;
-}
+    // Check if the email exists and the password matches
+    if (users[email] && users[email].password === password1) {
+        alert("Login successful");
+        return true;
+    } else {
+        alert("Email or password is incorrect");
+        return false;
+    }
 }
