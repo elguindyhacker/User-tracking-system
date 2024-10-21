@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    height: 100vh; 
+    background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdml1MTd1dmIxdDgwZWFyczBzaHlhaWRjNW10MDl0YTl1MHJ0MmkzMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ov9jHiEzknijxAD3q/giphy.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+
+h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 2em;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 40em;
+    height: auto;
+    padding: 20px;
+    margin: 0 auto; 
+}
+
+
+.eh{
+text-align: center;
+}
+
+
+input[type="submit"] {
+    margin-top: 15px; 
+}
+
